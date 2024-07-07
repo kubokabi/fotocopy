@@ -59,7 +59,8 @@ class PembelianController extends Controller
 
         // Generate no_faktur berdasarkan waktu saat ini
         $now = date('m-y-Hi');
-        $no_faktur = 'F-' . $now;
+        $tgl= date('j');
+        $no_faktur = $tgl . 'F-' . $now;
 
         // Buat faktur pembelian baru
         $invoice = FakturPembelian::create([
