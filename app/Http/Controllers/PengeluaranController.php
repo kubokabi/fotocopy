@@ -54,7 +54,8 @@ class PengeluaranController extends Controller
 
         // Generate no_faktur
         $now = date('m-y-Hi');
-        $no_faktur = 'FK-' . $now;
+        $tgl = date('j');
+        $no_faktur = $tgl . 'FK-' . $now;
 
         // Create faktur Pengeluaran
         $invoice = FakturPengeluaran::create([
