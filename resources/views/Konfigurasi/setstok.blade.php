@@ -47,10 +47,10 @@
                                     </td>
                                     <td>
                                         <input type="hidden" name="kd_brg[]" value="{{ $barang->kd_brg }}">
-                                        <input type="number" class="form-control" name="stok_min[]" value="{{ $barang->stok_min }}">
+                                        <input type="number" class="form-control" name="stok_min[]" value="{{ $barang->stok_min }}" required>
                                     </td>
                                     <td>
-                                        <input type="number" class="form-control" name="stok_max[]" value="{{ $barang->stok_max }}">
+                                        <input type="number" class="form-control" name="stok_max[]" value="{{ $barang->stok_max }}" required>
                                     </td>
                                 </tr>
                                 @endforeach
