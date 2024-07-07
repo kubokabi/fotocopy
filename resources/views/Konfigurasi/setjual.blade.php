@@ -45,10 +45,10 @@
                                     <td>{{ $barang->satuan }}</td>
                                     <td>
                                         <input type="hidden" name="kd_brg[]" value="{{ $barang->kd_brg }}">
-                                        <input type="number" class="form-control" name="harga_beli[]" value="{{ $barang->harga_beli }}">
+                                        <input type="number" class="form-control" name="harga_beli[]" value="{{ $barang->harga_beli }}" required>
                                     </td>
                                     <td>
-                                        <input type="number" class="form-control" name="harga_jual[]" value="{{ $barang->harga_jual }}">
+                                        <input type="number" class="form-control" name="harga_jual[]" value="{{ $barang->harga_jual }}" required>
                                     </td>
                                 </tr>
                                 @endforeach
