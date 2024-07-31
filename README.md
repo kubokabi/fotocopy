@@ -25,18 +25,23 @@ Clone repository Laravel dari GitHub:
 git clone https://github.com/kubokabi/fotocopy.git
 cd fotocopy
  ```
+### 2. Composer install
 
-### 2. Ubah file env menjadi .env lalu setting database nya
+```bash
+composer install
+ ```
 
-### 3. Setting database.php yang ada di config/database.php
+### 3. Ubah file env menjadi .env lalu setting database nya
 
-### 4. Migration Database
+### 4. Setting database.php yang ada di config/database.php
+
+### 5. Migration Database
 
 ```bash
 php artisan migrate
  ```
 
-### 5. Jalankan Aplikasi
+### 6. Jalankan Aplikasi
 
 ```bash
 php artisan serve
